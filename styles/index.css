@@ -1,7 +1,13 @@
+@font-face {
+	font-family: Yeseva;
+	src: url("..//fonts/YesevaOne/YesevaOne-Regular.ttf");
+}
+
 body {
 	width: 1600px;
 	margin: 0 auto;
 	padding: 0;
+	color: white;
 }
 
 header {
@@ -20,10 +26,31 @@ header {
 	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(255, 255, 255, 0));
 }
 
-.header-menu a {
+.header-menu .logo {
+	position: relative;
+	right: 8px;
+	top: 40px;
+	/*padding-right: 61px;*/
+	/*padding-top: 40px;*/
 	width: 33%;
+	font-size: 36px;
+	font-family: Yeseva;
+	text-align: center;
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.9);
 }
 
 .header-menu section {
 	width: 33%;
+}
+
+.header-menu .page-nav a {
+	display: inline-block;
+	/*padding-top: 20px;*/
+	width: 80px;
+	height: 70px;
+	font-size: 21px;
+	border: 1px solid red;
+	text-decoration: none;
+	color: white;
 }
