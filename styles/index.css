@@ -3,11 +3,28 @@
 	src: url("..//fonts/YesevaOne/YesevaOne-Regular.ttf");
 }
 
+@font-face {
+	font-family: GenBk;
+	src: url("..//fonts/GenBk/GenBkBasB.ttf") format('truetype');
+}
+
+@font-face {
+font-family: "FontAwesome";
+font-weight: normal;
+font-style : normal;
+       src : url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?v=4.3.0");
+       src : url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype"),
+             url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"),
+             url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"),
+             url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"),
+             url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
+}
+
 body {
 	width: 1600px;
 	margin: 0 auto;
 	padding: 0;
-	color: white;
+	color: #000;
 }
 
 header {
@@ -30,8 +47,6 @@ header {
 	position: relative;
 	right: 8px;
 	top: 40px;
-	/*padding-right: 61px;*/
-	/*padding-top: 40px;*/
 	width: 33%;
 	font-size: 36px;
 	font-family: Yeseva;
@@ -40,17 +55,256 @@ header {
 	color: rgba(255, 255, 255, 0.9);
 }
 
-.header-menu section {
-	width: 33%;
+.header-menu .page-nav {
+	margin-left: 32px;
+	width: 50%;
 }
 
 .header-menu .page-nav a {
 	display: inline-block;
-	/*padding-top: 20px;*/
-	width: 80px;
-	height: 70px;
+	padding-top: 45px;
+	min-width: 80px;
+	height: 30px;
 	font-size: 21px;
-	border: 1px solid red;
+	border-top: 4px solid rgba(0, 0, 0, 0);
+	font-family: GenBk;
+	text-align: center;
 	text-decoration: none;
 	color: white;
+}
+
+.page-nav a:hover {
+	border-top: 4px solid #cbc8bd;
+}
+
+.page-nav a:nth-of-type(2) {
+	margin-left: 21px;
+}
+
+.page-nav a:nth-of-type(3) {
+	margin-left: 36px;
+}
+
+.page-nav a:nth-of-type(4) {
+	margin-left: 24px;
+}
+
+.page-nav a:nth-of-type(5) {
+	margin-left: 31px;
+}
+
+.page-nav a:nth-of-type(6) {
+	margin-left: 45px;
+}
+
+.header-menu .socials a {
+	display: inline-block;
+	margin-top: 50px;
+	margin-right: 80px;
+	margin-left: -60px;
+	font-size: 21px;
+	text-decoration: none;
+	color: #dab33e;
+}
+
+header h1 {
+	position: relative;
+	left: 315px;
+	top: -5px;
+	width: 970px;
+	height: 180px;
+	font-size: 90px;
+	font-weight: lighter;
+	font-family: Yeseva;
+	line-height: 117px;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.9);
+}
+
+header .divider {
+	display: block;
+	position: relative;
+	left: 687px;
+	top: 13px;
+	text-align: center;
+}
+
+header .header-hrefs {
+	margin-top: 68px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.header-hrefs a {
+	text-decoration: none;
+	font-size: 18px;
+	font-family: Lato;
+	color: #fff;
+}
+
+.header-hrefs a:first-child {
+	margin-right: 28px;
+	padding: 21px 50px 16px 50px;
+	border: 1px solid #000;
+	background-color: rgba(0, 0, 0, 0.55);
+}
+
+.header-hrefs a:last-child {
+	padding: 21px 50px 16px 50px;
+	border: 1px solid rgba(255, 255, 255, 0.6);
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.about-wrapper {
+	height: 710px;
+	background: linear-gradient(#fff, #d5d5d5);
+	background-image: url(..//img/about-bg-pattern.png);
+}
+
+.about {
+	width: 430px;
+	height: 510px;
+	text-align: center;
+
+}
+
+.about .about-text h2 {
+	margin: 0;
+	margin-left: 2px;
+	padding: 0;
+	font-size: 36px;
+	font-weight: lighter;
+	font-family: Yeseva;
+	color: #cc9900;
+}
+
+.about .about-text p {
+	margin: 0;
+	margin-top: -1px;
+	margin-left: 6px;
+	font-size: 16px;
+	font-family: Lato;
+	line-height: 24px;
+	white-space: pre-wrap;
+	color: grey;
+}
+
+.about-text {
+	position: relative;
+	top: 100px;
+	left: 283px;
+}
+
+
+
+.about-text img:first-of-type {
+	margin-top: 14px;
+}
+
+.about-text img:last-of-type {
+	margin-top: 24px;
+	margin-left: 72px;
+}
+
+.about-wrapper > img {
+	position: relative;
+	top: -455px;
+	left: 740px;
+}
+
+.ingredients-wrapper {
+	height: 758px;
+	background-image: url(..//img/ingridients-bg.jpg);
+}
+
+.ingredients-container {
+	position: relative;
+	top: 100px;
+	left: 815px;
+	width: 570px;
+	height: 557px;
+	background-color: rgba(0, 0, 0, 0.57);
+	text-align: center;
+	color: #fff;
+}
+
+.ingredients {
+	text-align: center;
+	padding: 46px 0 0 70px;
+	width: 430px;
+}
+
+.ingredients h2 {
+	font-size: 36px;
+	font-family: Yeseva;
+	font-weight: lighter;
+}
+
+.ingredients img {
+	position: relative;
+	top: -15px;
+
+}
+
+.ingredients p {
+	margin: 0;
+	margin-top: 6px;
+	margin-left: 3px;
+	font-size: 16px;
+	font-family: Lato;
+	line-height: 24px;
+	white-space: pre-wrap;
+}
+
+.ingredients-container figure {
+	padding-top: 24px;
+}
+
+.ingredients-container figure img:first-of-type {
+	position: relative;
+	left: -23px;
+}
+
+.ingredients-container figure img:last-of-type {
+	position: relative;
+	right: -23px;
+}
+
+.menu-wrapper {
+	height: 994px;
+	background-image: url(..//img/menu-bg-pattern.png);
+}
+
+.dish-menu-container {
+	width: 570px;
+}
+
+.dish-menu-text {
+	width: 450px;
+	text-align: center;
+}
+
+.dish-description div {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-flow: row;
+	-moz-flex-flow: row;
+	-ms-flex-flow: row;
+	-o-flex-flow: row;
+	flex-flow: row;
+}
+
+.dish-description div h2 {
+	width: 50%;
+}
+
+.dish-description div h2:first-of-type {
+	float: left;
+}
+
+.dish-description div h2:last-of-type {
+	float: right;
 }
