@@ -27,8 +27,13 @@ body {
 	color: #000;
 }
 
+h2 {
+	font-family: Yeseva;
+	font-size: 36px;
+}
+
 header {
-	background-image: url(..//img/header-bg.jpg);
+	background-image: url(../img/header-bg.jpg);
 	height: 750px;
 }
 
@@ -158,7 +163,7 @@ header .header-hrefs {
 .about-wrapper {
 	height: 710px;
 	background: linear-gradient(#fff, #d5d5d5);
-	background-image: url(..//img/about-bg-pattern.png);
+	background-image: url(../img/about-bg-pattern.png);
 }
 
 .about {
@@ -172,9 +177,7 @@ header .header-hrefs {
 	margin: 0;
 	margin-left: 2px;
 	padding: 0;
-	font-size: 36px;
 	font-weight: lighter;
-	font-family: Yeseva;
 	color: #cc9900;
 }
 
@@ -214,7 +217,7 @@ header .header-hrefs {
 
 .ingredients-wrapper {
 	height: 758px;
-	background-image: url(..//img/ingridients-bg.jpg);
+	background-image: url(../img/ingridients-bg.jpg);
 }
 
 .ingredients-container {
@@ -235,8 +238,6 @@ header .header-hrefs {
 }
 
 .ingredients h2 {
-	font-size: 36px;
-	font-family: Yeseva;
 	font-weight: lighter;
 }
 
@@ -271,40 +272,409 @@ header .header-hrefs {
 }
 
 .menu-wrapper {
-	height: 994px;
-	background-image: url(..//img/menu-bg-pattern.png);
+	background-image: url(../img/menu-bg-pattern.png);
+	background-image: url(../img/menu-bg.jpg);
 }
 
 .dish-menu-container {
-	width: 570px;
-}
-
-.dish-menu-text {
-	width: 450px;
+	margin: auto auto 0;
+	width: 1170px;
 	text-align: center;
 }
 
+.dish-menu-text {
+	margin: 0;
+	padding: 0;
+	width: 440px;
+	text-align: center;
+}
+
+.dish-menu-text:first-of-type {
+	position: relative;
+	top: 93px;
+	left: 64px;
+}
+
+.dish-menu-text:nth-of-type(2) {
+	position: relative;
+	top: -301px;
+	left: 664px;
+}
+
+.dish-menu-text:nth-of-type(3) {
+	position: relative;
+	top: -172px;
+	left: 64px;
+}
+
+.dish-menu-text:last-of-type {
+	position: relative;
+	top: -670px;
+	left: 664px;
+}
+
+.dish-menu-text h2 {
+	margin: 7px 0 13px 0;
+	padding: 0;
+	font-weight: lighter;
+	color: #cc9900;
+}
+
+.dish-description {
+	margin-top: 22px;
+}
+
 .dish-description div {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	-webkit-flex-flow: row;
-	-moz-flex-flow: row;
-	-ms-flex-flow: row;
-	-o-flex-flow: row;
-	flex-flow: row;
+	width: 435px;
 }
 
-.dish-description div h2 {
+.dish-description div h3 {
+	margin: 0;
+	padding: 0;
 	width: 50%;
+	font-family: Yeseva;
+	font-size: 21px;
+	font-weight: lighter;
+	color: #cc9900;
 }
 
-.dish-description div h2:first-of-type {
+.dish-description div h3:first-of-type {
+	text-align: left;
 	float: left;
 }
 
-.dish-description div h2:last-of-type {
+.dish-description div h3:last-of-type {
+	text-align: right;
 	float: right;
+}
+
+.dish-description p {
+	margin: 5px 0 30px 5px;
+	font-family: Lato;
+	font-size: 16px;
+	text-align: left;
+}
+
+.review-wrapper {
+	margin-top: -597px;
+	background-image: url(../img/review-bg.jpg);
+	height: 758px;
+}
+
+.review-container {
+	margin: auto;
+	position: relative;
+	top: 100px;
+	width: 770px;
+	height: 557px;
+	text-align: center;
+	background-image: url(../img/review-text-bg.png);
+}
+
+.review-container h2 {
+	margin: 0;
+	padding-top: 77px;
+	font-weight: lighter;
+	color: white;
+}
+
+.review-container img {
+	margin-top: 15px;
+	margin-left: 41px;
+}
+
+.review-container p {
+	margin-top: 15px;
+	margin-left: 70px;
+	width: 630px;
+	font-size: 25px;
+	font-family: GenBk;
+	line-height: 1.8;
+	white-space: pre-wrap;
+	color: white;
+}
+
+.review-container p span{
+	display: block;
+	margin-top: -17px;
+	font-size: 18px;
+	font-family: Lato;
+}
+
+.review-container > span {
+	position: relative;
+	top: -423px;
+	right: 338px;
+	font-size: 96px;
+	font-family: Georgia;
+	color: #969997;
+}
+
+.reservations {
+    position: relative;
+    background-image: linear-gradient(163deg, rgba(255, 255, 255, 0), rgba(12, 52, 53, .07)), 
+                      url("../img/about-bg-pattern.png");
+    width: 100%;
+    height: 710px;
+}
+
+.reservations figure {
+    position: absolute;
+    top: 84px;
+    left: 175px;
+    height: 507px;
+}
+.reservations figure img {
+    margin-right: 26px;
+}
+
+.reservations form {
+    position: absolute;
+    top: 96px;
+    left: 892px;
+    width: 415px;
+    height: 507px;
+}
+
+.reservations form h2 {
+    color: rgb(204, 153, 0);
+    text-align: center;
+    font-weight: lighter;
+    margin: 0;
+}
+
+.reservations form h2::after {
+    position: relative;
+    top: 5px;
+    left: -1px;
+    content: url("../img/menu-divider.png");
+}
+
+.reservations form p {
+	font: normal 16px/1.5 "Lato";
+    text-align: center;
+    margin-top: 22px;
+}
+
+.reservations form p + p {
+    margin-top: -6px;
+}
+
+.reservations form label {
+    font: bold 14px "OpenSans";
+    color: rgb(204, 153, 0);
+}
+
+.reservations form input, .reservations form select {
+    width: 182px;
+    height: 32px;
+    background-color: rgba(255, 255, 255, .4);
+    border: 1px rgb(200, 200, 200) solid;
+    font: italic 16px "OpenSans";
+    padding-left: 15px;
+}
+
+.reservations form .label-name {
+    position: absolute;
+    top: 298px;
+    left: -7px;
+}
+
+.reservations form .label-email {
+    position: absolute;
+    top: 298px;
+    left: 222px;
+}
+
+.reservations form .label-date {
+    position: absolute;
+    top: 383px;
+    left: -7px;
+}
+
+.reservations form .label-party {
+    position: absolute;
+    top: 383px;
+    left: 222px;
+}
+
+.reservations form .name {
+    position: absolute;
+    top: 323px;
+    left: -7px;
+}
+
+.reservations form .email {
+    position: absolute;
+    top: 323px;
+    left: 223px;
+    width: 183px;
+}
+
+.reservations form .date, .reservations form .onfocus {
+    position: absolute;
+    top: 406px;
+    left: -7px;
+    width: 183px;
+    height: 34px;
+}
+
+.reservations form .date::before {
+    color: rgb(124, 124, 124);
+    content: attr(placeholder);
+}
+
+.reservations form .date::-webkit-calendar-picker-indicator,
+.reservations form .onfocus::-webkit-calendar-picker-indicator {
+    position: relative;
+    left: -3px;
+    color: transparent;
+    opacity: 1;
+    background: url("../img/reservations-date-icon.png") no-repeat;
+}
+
+.reservations form .date::-webkit-inner-spin-button,
+.reservations form .onfocus::-webkit-inner-spin-button { 
+    display: none; 
+}
+
+.reservations form .date::-webkit-clear-button,
+.reservations form .onfocus::-webkit-clear-button {
+    display: none;
+}
+
+.reservations form .date::-webkit-datetime-edit {
+    visibility: hidden;
+}
+
+.reservations form .onfocus::-webkit-datetime-edit {
+    visibility: visible;
+}
+
+.reservations form .party {
+    position: absolute;
+    top: 406px;
+    left: 223px;
+    width: 200px;
+    height: 36px;
+    padding-left: 14px;
+
+    -webkit-appearance: none;
+    background-image: url('../img/reservations-select-icon.png');
+    background-position: 176px center;
+    background-repeat: no-repeat;
+}
+
+.reservations form .party:invalid {
+    color: rgb(124, 124, 124);
+}
+
+.reservations form .party option + option {
+    color: rgb(0, 0, 0);
+}
+
+.reservations form .name:focus,
+.reservations form .email:focus,
+.reservations form .onfocus:focus,
+.reservations form .party:focus {
+    outline: none;
+    border: 1px rgb(200, 159, 45) solid;
+}
+
+.reservations form button {
+    position: absolute;
+    top: 475px;
+    left: 109px;
+    width: 200px;
+    height: 36px;
+    background-color: rgb(201, 161, 49);
+    border-width: 0px;
+    font: normal 17px "OpenSans";
+    color: rgb(255, 255, 255);
+}
+
+footer {
+    position: relative;
+    background-color: rgb(25, 25, 25);
+    color: rgb(255, 255, 255);
+    margin: auto;
+    width: 1600px;
+    height: 320px;
+    text-align: center;
+}
+
+footer h3 {
+	font: 21px "Yeseva";
+}
+
+footer .about-us {
+    position: absolute;
+    top: 29px;
+    left: 212px;
+    height: 200px;
+    width: 375px;
+}
+
+footer .about-us h3:after {
+    position: relative;
+    top: 16px;
+    content: url("../img/footer-divider.png");
+}
+
+footer .hours {
+    position: absolute;
+    top: 29px;
+    left: 691px;
+    height: 200px;
+    width: 220px;
+}
+
+footer .hours h3:after {
+    position: relative;
+    top: 16px;
+    left: -1px;
+    content: url("../img/footer-divider.png");
+}
+
+footer p {
+    position: relative;
+    top: 1px;
+    font: normal 17px "OpenSans";
+    word-spacing: -1px;
+    line-height: 1.45;
+}
+
+footer .location p {
+    letter-spacing: 0px;
+}
+
+footer .location {
+    position: absolute;
+    top: 29px;
+    left: 1091px;
+    height: 200px;
+    width: 220px;
+}
+
+footer .location h3:after {
+    position: relative;
+    top: 16px;
+    left: -1px;
+    content: url("../img/footer-divider.png");
+}
+
+footer .payment a {
+    position: relative;
+    top: 34px;
+    left: 3px;
+    color: rgb(255, 255, 255);
+    padding: 0px 4px;
+}
+
+footer .social a {
+    position: relative;
+    top: 34px;
+    left: 4px;
+    color: rgb(255, 255, 255);
+    padding: 0px 4px;
 }
